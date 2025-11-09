@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | A.M DIGITAL HEALTH HUB</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: #f9fafc;
+      color: #111;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(90deg, #003366, #007bff);
+      color: white;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    header img {
+      height: 60px;
+      width: auto;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #ffcc00;
+    }
+
+    section.contact {
+      padding: 70px 10%;
+      background: white;
+    }
+
+    section.contact h1 {
+      font-size: 2.5rem;
+      color: #003366;
+      text-align: center;
+      margin-bottom: 50px;
+      position: relative;
+    }
+
+    section.contact h1::after {
+      content: "";
+      width: 80px;
+      height: 4px;
+      background: #007bff;
+      display: block;
+      margin: 10px auto 0;
+      border-radius: 2px;
+    }
+
+    .contact-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 50px;
+      justify-content: space-between;
+    }
+
+    .contact-info, .contact-form {
+      flex: 1 1 45%;
+    }
+
+    .contact-info h2, .contact-form h2 {
+      color: #003366;
+      margin-bottom: 20px;
+    }
+
+    .contact-info p {
+      color: #000;
+      margin-bottom: 10px;
+    }
+
+    .contact-form form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact-form input, 
+    .contact-form textarea {
+      padding: 12px;
+      margin-bottom: 15px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    .contact-form button {
+      padding: 12px;
+      border: none;
+      background: #007bff;
+      color: white;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background: #0056b3;
+    }
+
+    footer {
+      background: #003366;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 0.9rem;
+      margin-top: 60px;
+    }
+
+    footer a {
+      color: #ffcc00;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media(max-width: 768px) {
+      .contact-container {
+        flex-direction: column;
+      }
+      .contact-info, .contact-form {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="A.M DIGITAL HEALTH HUB Logo" />
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="contact">
+    <h1>Contact Us</h1>
+    <div class="contact-container">
+      <div class="contact-info">
+        <h2>Get In Touch</h2>
+        <p><strong>Address:</strong> Matsango Azare, Bauchi State, Nigeria</p>
+        <p><strong>Email:</strong> amdigitalhealthhub@gmail.com</p>
+        <p><strong>Phone:</strong> +2348089454939</p>
+        <p><strong>Office Hours:</strong> Mon - Fri, 9:00 AM - 5:00 PM</p>
+      </div>
+
+      <div class="contact-form">
+        <h2>Send Us a Message</h2>
+        <form onsubmit="submitForm(event)">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 A.M DIGITAL HEALTH HUB | All Rights Reserved</p>
+    <p>Developed by <a href="#">Alhassan Mujtaba</a></p>
+  </footer>
+
+  <script>
+    function submitForm(e) {
+      e.preventDefault();
+      alert("Thank you! Your message has been submitted.");
+      e.target.reset();
+      console.log("Form submitted:", e.target.name.value, e.target.email.value, e.target.message.value);
+    }
+  </script>
+</body>
+</html>

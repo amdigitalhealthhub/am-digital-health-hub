@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | A.M DIGITAL HEALTH HUB</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: #f9fafc;
+      color: #111;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(90deg, #003366, #007bff);
+      color: white;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    header img {
+      height: 60px;
+      width: auto;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #ffcc00;
+    }
+
+    section.projects {
+      padding: 70px 10%;
+      background: white;
+    }
+
+    section.projects h1 {
+      font-size: 2.5rem;
+      color: #003366;
+      text-align: center;
+      margin-bottom: 50px;
+      position: relative;
+    }
+
+    section.projects h1::after {
+      content: "";
+      width: 80px;
+      height: 4px;
+      background: #007bff;
+      display: block;
+      margin: 10px auto 0;
+      border-radius: 2px;
+    }
+
+    .projects-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .project-card {
+      background: #f0f4fa;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .project-card-content {
+      padding: 20px;
+      text-align: left;
+    }
+
+    .project-card-content h2 {
+      color: #003366;
+      margin-bottom: 10px;
+      font-size: 1.3rem;
+    }
+
+    .project-card-content p {
+      color: #000;
+      font-size: 1rem;
+    }
+
+    footer {
+      background: #003366;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 0.9rem;
+      margin-top: 60px;
+    }
+
+    footer a {
+      color: #ffcc00;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media(max-width: 768px) {
+      .projects-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="A.M DIGITAL HEALTH HUB Logo" />
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="projects">
+    <h1>Our Projects</h1>
+    <div class="projects-container">
+      <div class="project-card">
+        <img src="assets/project1.png" alt="Project 1">
+        <div class="project-card-content">
+          <h2>Digital Health System Implementation</h2>
+          <p>Successfully deployed electronic health record systems for local clinics, improving data accuracy and patient management.</p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="assets/project2.jpeg" alt="Project 2">
+        <div class="project-card-content">
+          <h2>Training Workshop on Health Informatics</h2>
+          <p>Conducted capacity-building programs for health workers and students in Health Information Management and ICT skills.</p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="assets/project3.jpg" alt="Project 3">
+        <div class="project-card-content">
+          <h2>Community Digital Health Awareness</h2>
+          <p>Implemented awareness campaigns and mobile-based health information systems to improve community health knowledge.</p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="assets/project4.png" alt="Project 4">
+        <div class="project-card-content">
+          <h2>Web & Software Development Projects</h2>
+          <p>Developed web apps and digital solutions for clients to streamline operations and integrate IT with health and training services.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 A.M DIGITAL HEALTH HUB | All Rights Reserved</p>
+    <p>Developed by <a href="#">Alhassan Mujtaba</a></p>
+  </footer>
+
+  <script>
+    console.log("Projects page loaded successfully.");
+  </script>
+</body>
+</html>

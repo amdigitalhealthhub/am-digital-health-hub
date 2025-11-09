@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services | A.M DIGITAL HEALTH HUB</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: #f9fafc;
+      color: #111;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(90deg, #003366, #007bff);
+      color: white;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    header img {
+      height: 60px;
+      width: auto;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #ffcc00;
+    }
+
+    section.services {
+      padding: 70px 10%;
+      background: white;
+    }
+
+    section.services h1 {
+      font-size: 2.5rem;
+      color: #003366;
+      text-align: center;
+      margin-bottom: 50px;
+      position: relative;
+    }
+
+    section.services h1::after {
+      content: "";
+      width: 80px;
+      height: 4px;
+      background: #007bff;
+      display: block;
+      margin: 10px auto 0;
+      border-radius: 2px;
+    }
+
+    .service-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .service-box {
+      background: #f0f4fa;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .service-box:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .service-box h2 {
+      color: #003366;
+      margin-bottom: 15px;
+      font-size: 1.4rem;
+    }
+
+    .service-box p {
+      color: #000;
+      font-size: 1rem;
+    }
+
+    footer {
+      background: #003366;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 0.9rem;
+      margin-top: 60px;
+    }
+
+    footer a {
+      color: #ffcc00;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="A.M DIGITAL HEALTH HUB Logo" />
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="services">
+    <h1>Our Core Services</h1>
+    <div class="service-container">
+      <div class="service-box">
+        <h2>Digital Health Solutions</h2>
+        <p>
+          We design and implement digital health systems that streamline data collection, reporting, and decision-making for healthcare institutions and communities.
+        </p>
+      </div>
+
+      <div class="service-box">
+        <h2>Health Information Management</h2>
+        <p>
+          Providing efficient record management and health data analytics to support planning, monitoring, and improving healthcare delivery.
+        </p>
+      </div>
+
+      <div class="service-box">
+        <h2>ICT Infrastructure & Support</h2>
+        <p>
+          We deploy and maintain reliable IT infrastructure, networking, and system support services to ensure digital efficiency in all environments.
+        </p>
+      </div>
+
+      <div class="service-box">
+        <h2>Capacity Building & Training</h2>
+        <p>
+          We offer tailored training programs for digital literacy, data management, and ICT applications in health and education sectors.
+        </p>
+      </div>
+
+      <div class="service-box">
+        <h2>Software & Web Development</h2>
+        <p>
+          Developing user-friendly websites, web apps, and mobile tools to enhance business operations, health systems, and e-learning platforms.
+        </p>
+      </div>
+
+      <div class="service-box">
+        <h2>Consultancy & Research</h2>
+        <p>
+          We provide expert consultation and conduct digital health research to improve implementation, sustainability, and impact measurement.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 A.M DIGITAL HEALTH HUB | All Rights Reserved</p>
+    <p>Developed by <a href="#">Alhassan Mujtaba</a></p>
+  </footer>
+
+  <script>
+    // Optional JS - add future interactivity here
+    console.log("Services page loaded successfully.");
+  </script>
+</body>
+</html>
