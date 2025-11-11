@@ -30,15 +30,15 @@
   <link rel="icon" type="image/png" href="logo.png">
   
   <style>
-    /* Reset and base styles */
-    * {
+   * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
       font-family: "Poppins", sans-serif;
     }
 
-    body {
+    body, html {
+      height: 100%;
       background: #f8f9fb;
       color: #333;
     }
@@ -47,7 +47,7 @@
     header {
       background: linear-gradient(90deg, #003366, #007bff);
       color: white;
-      padding: 15px 40px;
+      padding: 15px 45%;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -64,6 +64,8 @@
       display: flex;
       list-style: none;
       gap: 25px;
+      flex-wrap: wrap;
+      justify-content: center;
     }
 
     nav ul li a {
@@ -80,7 +82,7 @@
     /* Hero section */
     .hero {
       background: url('assets/office-bg.jpeg') center/cover no-repeat;
-      height: 80vh;
+      min-height: calc(100vh - 120px);
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -88,6 +90,7 @@
       text-align: center;
       color: white;
       position: relative;
+      padding: 40px 20px;
     }
 
     .hero::before {
@@ -109,6 +112,7 @@
       font-size: 1.3rem;
       z-index: 1;
       animation: fadeInUp 1.5s ease;
+      max-width: 90%;
     }
 
     .hero button {
@@ -156,6 +160,52 @@
     footer a:hover {
       text-decoration: underline;
     }
+
+/* Responsive Design */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      .hero {
+        min-height: calc(100vh - 140px);
+        padding: 80px 10px;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      .hero button {
+        padding: 10px 20px;
+      }
+
+      footer {
+        font-size: 0.85rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero h1 {
+        font-size: 1.6rem;
+      }
+
+      .hero p {
+        font-size: 0.95rem;
+      }
+    }
   </style>
 </head>
 <body>
@@ -190,5 +240,6 @@
   </script>
 </body>
 </html>
+
 
 
