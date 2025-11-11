@@ -4,9 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  
-
-  <!-- SEO Meta Tags -->
+<!-- SEO Meta Tags -->
 <meta name="description" content="A.M DIGITAL HEALTH HUB is a leading Information Technology and Digital Health company offering innovative solutions, IT training, and digital health services across Nigeria.">
 <meta name="keywords" content="Digital Health, Information Technology, Health IT, IT Training, A.M DIGITAL HEALTH HUB, Nigeria Health Tech, Health Innovation">
 <meta name="author" content="A.M DIGITAL HEALTH HUB">
@@ -25,9 +23,7 @@
 <meta name="twitter:description" content="Explore our IT and Digital Health innovations designed to improve lives and connect communities through technology.">
 <meta name="twitter:image" content="logo.png">
 
-
-
-  
+ 
   <title>Services | A.M DIGITAL HEALTH HUB</title>
   <link rel="icon" type="image/png" href="logo.png">
   
@@ -44,40 +40,7 @@
       color: #111;
       line-height: 1.6;
     }
-
-    header {
-      background: linear-gradient(90deg, #003366, #007bff);
-      color: white;
-      padding: 15px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
-    }
-
-    header img {
-      height: 60px;
-      width: auto;
-    }
-
-    nav ul {
-      display: flex;
-      list-style: none;
-      gap: 25px;
-    }
-
-    nav ul li a {
-      text-decoration: none;
-      color: white;
-      font-weight: 500;
-      transition: color 0.3s ease;
-    }
-
-    nav ul li a:hover {
-      color: #ffcc00;
-    }
-
+  
     section.services {
       padding: 70px 10%;
       background: white;
@@ -132,13 +95,71 @@
       font-size: 1rem;
     }
 
+
+
+
+/* Header */ 
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(90deg, #003366, #007bff);
+  padding: 15px 30px;
+  color: white;
+  flex-wrap: nowrap; /* ✅ keep horizontal */
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+header img {
+  height: 60px;
+  width: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-wrap: nowrap; /* ✅ prevent wrapping */
+  gap: 25px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  white-space: nowrap; /* ✅ prevent text break */
+}
+
+nav ul li a:hover {
+  color: #ffcc00;
+}
+
+/* ✅ optional: make horizontal scroll appear if small phone width */
+@media (max-width: 600px) {
+  header {
+    overflow-x: auto;
+  }
+}
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Footer */
     footer {
       background: #003366;
       color: white;
       text-align: center;
       padding: 20px 10px;
       font-size: 0.9rem;
-      margin-top: 60px;
     }
 
     footer a {
@@ -149,6 +170,62 @@
     footer a:hover {
       text-decoration: underline;
     }
+
+/* Responsive Layot - Keep header horizontal but flexible */
+   @media (max-width: 768px) {
+      header {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px 20px;
+      }
+
+      nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+      }
+
+      nav ul li a {
+        font-size: 0.9rem;
+      }
+
+      header img {
+        height: 50px;
+        margin-bottom: 5px;
+      } 
+
+      .hero {
+        min-height: calc(100vh - 140px);
+        padding: 70px 10px;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      footer {
+        font-size: 0.85rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero h1 {
+        font-size: 1.6rem;
+      }
+
+      .hero p {
+        font-size: 0.95rem;
+      }
+    }
+
+
+
+    
   </style>
 </head>
 <body>
@@ -223,5 +300,6 @@
   </script>
 </body>
 </html>
+
 
 
