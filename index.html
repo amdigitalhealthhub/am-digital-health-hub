@@ -26,192 +26,53 @@
 <meta name="twitter:description" content="Explore our IT and Digital Health innovations designed to improve lives and connect communities through technology.">
 <meta name="twitter:image" content="logo.png">
 
-
   <style>
-   * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: "Poppins", sans-serif;
-    }
 
-    body, html {
-      height: 100%;
-      background: #f8f9fb;
-      color: #333;
-    }
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(90deg, #003366, #007bff);
+  padding: 15px 30px;
+  color: white;
+  flex-wrap: nowrap; /* ✅ keep horizontal */
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
 
-    /* Header */
-    header {
-      background: linear-gradient(90deg, #003366, #007bff);
-      color: white;
-      padding: 15px 40%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
-    }
+header img {
+  height: 60px;
+  width: auto;
+}
 
-    header img {
-      height: 60px;
-      width: auto;
-    }
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-wrap: nowrap; /* ✅ prevent wrapping */
+  gap: 25px;
+}
 
-    nav ul {
-      display: flex;
-      list-style: none;
-      gap: 25px;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  white-space: nowrap; /* ✅ prevent text break */
+}
 
-    nav ul li a {
-      text-decoration: none;
-      color: white;
-      font-weight: 500;
-      transition: color 0.3s ease;
-    }
+nav ul li a:hover {
+  color: #ffcc00;
+}
 
-    nav ul li a:hover {
-      color: #ffcc00;
-    }
-
-    /* Hero section */
-    .hero {
-      background: url('assets/office-bg.jpeg') center/cover no-repeat;
-      min-height: calc(100vh - 120px);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: white;
-      position: relative;
-      padding: 40px 20px;
-    }
-
-    .hero::before {
-      content: "";
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: rgba(0, 0, 0, 0.5);
-    }
-
-    .hero h1 {
-      font-size: 3rem;
-      z-index: 1;
-      margin-bottom: 10px;
-      animation: fadeInDown 1s ease;
-    }
-
-    .hero p {
-      font-size: 1.3rem;
-      z-index: 1;
-      animation: fadeInUp 1.5s ease;
-      max-width: 90%;
-    }
-
-    .hero button {
-      margin-top: 25px;
-      padding: 12px 25px;
-      background: #ffcc00;
-      color: #003366;
-      border: none;
-      border-radius: 5px;
-      font-weight: bold;
-      cursor: pointer;
-      z-index: 1;
-      animation: fadeInUp 2s ease;
-      transition: background 0.3s ease;
-    }
-
-    .hero button:hover {
-      background: #ffd633;
-    }
-
-    @keyframes fadeInDown {
-      from { opacity: 0; transform: translateY(-30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    /* Footer */
-    footer {
-      background: #003366;
-      color: white;
-      text-align: center;
-      padding: 20px 10px;
-      font-size: 0.9rem;
-    }
-
-    footer a {
-      color: #ffcc00;
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-    }
-
-/* Responsive Layot - Keep header horizontal but flexible */
-   @media (max-width: 768px) {
-      header {
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 10px 20px;
-      }
-
-      nav ul {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-      }
-
-      nav ul li a {
-        font-size: 0.9rem;
-      }
-
-      header img {
-        height: 50px;
-        margin-bottom: 5px;
-      } 
-
-      .hero {
-        min-height: calc(100vh - 140px);
-        padding: 70px 10px;
-      }
-
-      .hero h1 {
-        font-size: 2rem;
-      }
-
-      .hero p {
-        font-size: 1rem;
-      }
-
-      footer {
-        font-size: 0.85rem;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .hero h1 {
-        font-size: 1.6rem;
-      }
-
-      .hero p {
-        font-size: 0.95rem;
-      }
-    }
-  
-   </style>
+/* ✅ optional: make horizontal scroll appear if small phone width */
+@media (max-width: 600px) {
+  header {
+    overflow-x: auto;
+  }
+}
+    
+  </style>
 </head>
 <body>
   <header>
@@ -245,6 +106,7 @@
   </script>
 </body>
 </html>
+
 
 
 
