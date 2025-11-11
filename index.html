@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A.M DIGITAL HEALTH HUB</title>
+  <link rel="icon" type="image/png" href="logo.png">
   
 
   <!-- SEO Meta Tags -->
@@ -25,10 +27,6 @@
 <meta name="twitter:image" content="logo.png">
 
 
-  
-  <title>A.M DIGITAL HEALTH HUB</title>
-  <link rel="icon" type="image/png" href="logo.png">
-  
   <style>
    * {
       margin: 0;
@@ -47,7 +45,7 @@
     header {
       background: linear-gradient(90deg, #003366, #007bff);
       color: white;
-      padding: 15px 45%;
+      padding: 15px 40%;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -161,23 +159,33 @@
       text-decoration: underline;
     }
 
-/* Responsive Design */
-    @media (max-width: 768px) {
+/* Responsive Layot - Keep header horizontal but flexible */
+   @media (max-width: 768px) {
       header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px 20px;
       }
 
       nav ul {
-        flex-direction: column;
-        gap: 10px;
-        margin-top: 10px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
       }
+
+      nav ul li a {
+        font-size: 0.9rem;
+      }
+
+      header img {
+        height: 50px;
+        margin-bottom: 5px;
+      } 
 
       .hero {
         min-height: calc(100vh - 140px);
-        padding: 80px 10px;
+        padding: 70px 10px;
       }
 
       .hero h1 {
@@ -186,10 +194,6 @@
 
       .hero p {
         font-size: 1rem;
-      }
-
-      .hero button {
-        padding: 10px 20px;
       }
 
       footer {
@@ -206,7 +210,8 @@
         font-size: 0.95rem;
       }
     }
-  </style>
+  
+   </style>
 </head>
 <body>
   <header>
@@ -240,6 +245,7 @@
   </script>
 </body>
 </html>
+
 
 
 
