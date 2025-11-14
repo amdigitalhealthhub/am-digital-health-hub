@@ -224,7 +224,31 @@ nav ul li a:hover {
     }
 
 
+    /* Smooth Fade-in Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInSlide 0.8s ease forwards;
+}
 
+@keyframes fadeInSlide {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.fade-in:nth-child(1) { animation-delay: 0.1s; }
+.fade-in:nth-child(2) { animation-delay: 0.2s; }
+.fade-in:nth-child(3) { animation-delay: 0.3s; }
+.fade-in:nth-child(4) { animation-delay: 0.4s; }
+.fade-in:nth-child(5) { animation-delay: 0.5s; }
+.fade-in:nth-child(6) { animation-delay: 0.6s; }
+.fade-in:nth-child(7) { animation-delay: 0.7s; }
+.fade-in:nth-child(8) { animation-delay: 0.8s; }
+
+    
     
   </style>
 </head>
@@ -242,51 +266,72 @@ nav ul li a:hover {
     </nav>
   </header>
 
-  <section class="services">
+ <section class="services">
     <h1>Our Core Services</h1>
-    <div class="service-container">
-      <div class="service-box">
-        <h2>Digital Health Solutions</h2>
-        <p>
-          We design and implement digital health systems that streamline data collection, reporting, and decision-making for healthcare institutions and communities.
-        </p>
-      </div>
+  
 
-      <div class="service-box">
-        <h2>Health Information Management</h2>
-        <p>
-          Providing efficient record management and health data analytics to support planning, monitoring, and improving healthcare delivery.
-        </p>
-      </div>
+<div class="service-container">
 
-      <div class="service-box">
-        <h2>ICT Infrastructure & Support</h2>
-        <p>
-          We deploy and maintain reliable IT infrastructure, networking, and system support services to ensure digital efficiency in all environments.
-        </p>
-      </div>
+  <div class="service-box fade-in">
+    <h2>Digital Health Solutions</h2>
+    <p>
+      We design and implement digital health systems that streamline data collection, reporting, and decision-making for healthcare institutions and communities.
+    </p>
+  </div>
 
-      <div class="service-box">
-        <h2>Capacity Building & Training</h2>
-        <p>
-          We offer tailored training programs for digital literacy, data management, and ICT applications in health and education sectors.
-        </p>
-      </div>
+  <div class="service-box fade-in">
+    <h2>Health Information Management</h2>
+    <p>
+      Providing efficient record management and health data analytics to support planning, monitoring, and improving healthcare delivery.
+    </p>
+  </div>
 
-      <div class="service-box">
-        <h2>Software & Web Development</h2>
-        <p>
-          Developing user-friendly websites, web apps, and mobile tools to enhance business operations, health systems, and e-learning platforms.
-        </p>
-      </div>
+  <div class="service-box fade-in">
+    <h2>ICT Infrastructure & Support</h2>
+    <p>
+      We deploy and maintain reliable IT infrastructure, networking, and system support services to ensure digital efficiency in all environments.
+    </p>
+  </div>
 
-      <div class="service-box">
-        <h2>Consultancy & Research</h2>
-        <p>
-          We provide expert consultation and conduct digital health research to improve implementation, sustainability, and impact measurement.
-        </p>
-      </div>
-    </div>
+  <div class="service-box fade-in">
+    <h2>Software & Web Development</h2>
+    <p>
+      Developing user-friendly websites, web apps, and mobile tools to enhance business operations, health systems, and e-learning platforms.
+    </p>
+  </div>
+
+  <div class="service-box fade-in">
+    <h2>E-Learning Setup & Digital Classroom Solutions</h2>
+    <p>
+      We design and deploy modern e-learning platforms with LMS, virtual classrooms, online tests, and digital course management for institutions and organizations.
+    </p>
+  </div>
+
+  <div class="service-box fade-in">
+    <h2>Capacity Building & Training</h2>
+    <p>
+      We offer tailored training programs for digital literacy, data management, ICT applications, and digital health systems.
+    </p>
+  </div>
+
+  <div class="service-box fade-in">
+    <h2>Consultancy & Research</h2>
+    <p>
+      Expert guidance and research support in digital health implementation, sustainability planning, and impact measurement.
+    </p>
+  </div>
+
+  <div class="service-box fade-in">
+    <h2>Community Health & Digital Outreach</h2>
+    <p>
+      We conduct health awareness campaigns, digital sensitization programs, and community empowerment initiatives to strengthen public health knowledge.
+    </p>
+  </div>
+
+</div>
+
+
+ 
   </section>
 
   <footer>
@@ -300,6 +345,7 @@ nav ul li a:hover {
   </script>
 </body>
 </html>
+
 
 
 
