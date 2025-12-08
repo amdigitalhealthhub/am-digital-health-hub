@@ -58,6 +58,10 @@
       overflow-x: hidden;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     /* HEADER */ 
     header {
       display: flex;
@@ -102,12 +106,10 @@
     /* HERO SECTION */
     .hero {
       background-color: #003366; 
-      /* Dark blue overlay + image */
       background-image: linear-gradient(rgba(0, 51, 102, 0.85), rgba(0, 51, 102, 0.7)), url('assets/office-bg.jpeg');
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
-      
       min-height: 85vh;
       display: flex;
       flex-direction: column;
