@@ -3,160 +3,311 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>A.M DIGITAL HEALTH HUB</title>
+  <title>A.M DIGITAL HEALTH HUB | Home</title>
   <link rel="icon" type="image/png" href="logo.png">
   
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- SEO Meta Tags -->
-<meta name="description" content="A.M DIGITAL HEALTH HUB is a leading Information Technology and Digital Health company offering innovative solutions, IT training, and digital health services across Nigeria.">
-<meta name="keywords" content="Digital Health, Information Technology, Health IT, IT Training, A.M DIGITAL HEALTH HUB, Nigeria Health Tech, Health Innovation">
-<meta name="author" content="A.M DIGITAL HEALTH HUB">
+  <meta name="description" content="A.M DIGITAL HEALTH HUB is a leading Information Technology and Digital Health company offering IT training, digital health solutions, and consultancy across Nigeria.">
+  <meta name="keywords" content="Digital Health Nigeria, IT Training, Health Informatics, A.M DIGITAL HEALTH HUB, NGO Partnership Nigeria, Africa Tech">
+  <meta name="author" content="A.M DIGITAL HEALTH HUB">
 
-<!-- Open Graph / Social Media Meta Tags -->
-<meta property="og:title" content="A.M DIGITAL HEALTH HUB | Empowering Digital Health and IT Solutions">
-<meta property="og:description" content="Explore our IT and Digital Health innovations designed to improve lives and connect communities through technology.">
-<meta property="og:image" content="logo.png"> <!-- Path to your logo -->
-<meta property="og:url" content="https://amdigitalhealthhub.github.io/am-digital-health-hub/">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="A.M DIGITAL HEALTH HUB">
-
-<!-- Twitter Card Meta -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="A.M DIGITAL HEALTH HUB | Empowering Digital Health and IT Solutions">
-<meta name="twitter:description" content="Explore our IT and Digital Health innovations designed to improve lives and connect communities through technology.">
-<meta name="twitter:image" content="logo.png">
+  <meta property="og:title" content="A.M DIGITAL HEALTH HUB | Empowering Communities">
+  <meta property="og:description" content="Bridging the gap between technology and healthcare in Nigeria through innovation and training.">
+  <meta property="og:image" content="https://amdigitalhealthhub.github.io/am-digital-health-hub/logo.png">
+  <meta property="og:url" content="https://amdigitalhealthhub.github.io/am-digital-health-hub/">
+  <meta property="og:type" content="website">
 
   <style>
-
-  * {
+    /* GLOBAL STYLES */
+    * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
       font-family: "Poppins", sans-serif;
     }
 
-    body, html {
-      height: 100%;
+    body {
       background: #f8f9fb;
       color: #333;
+      overflow-x: hidden;
     }
 
-/* Header */ 
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: linear-gradient(90deg, #003366, #007bff);
-  padding: 15px 30px;
-  color: white;
-  flex-wrap: nowrap; /* ✅ keep horizontal */
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
-}
+    /* HEADER */ 
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: linear-gradient(90deg, #003366, #007bff);
+      padding: 15px 5%;
+      color: white;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
 
-header img {
-  height: 60px;
-  width: auto;
-}
+    header img {
+      height: 50px;
+      width: auto;
+    }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-  flex-wrap: nowrap; /* ✅ prevent wrapping */
-  gap: 25px;
-}
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+      gap: 20px;
+    }
 
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
-  white-space: nowrap; /* ✅ prevent text break */
-}
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: color 0.3s ease;
+      white-space: nowrap;
+    }
 
-nav ul li a:hover {
-  color: #ffcc00;
-}
+    nav ul li a:hover {
+      color: #ffcc00;
+    }
 
-/* ✅ optional: make horizontal scroll appear if small phone width */
-@media (max-width: 600px) {
-  header {
-    overflow-x: auto;
-  }
-}
-
-    /* Hero section */
+    /* HERO SECTION */
     .hero {
-      background: url('assets/office-bg.jpeg') center/cover no-repeat;
-      min-height: calc(100vh - 120px);
+      background-color: #003366; 
+      /* Dark blue overlay + image */
+      background-image: linear-gradient(rgba(0, 51, 102, 0.85), rgba(0, 51, 102, 0.7)), url('assets/office-bg.jpeg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      
+      min-height: 85vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
       color: white;
-      position: relative;
       padding: 40px 20px;
-    }
-
-    .hero::before {
-      content: "";
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: rgba(0, 0, 0, 0.5);
     }
 
     .hero h1 {
       font-size: 3rem;
-      z-index: 1;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
       animation: fadeInDown 1s ease;
+      line-height: 1.2;
+      font-weight: 700;
     }
 
     .hero p {
-      font-size: 1.3rem;
-      z-index: 1;
+      font-size: 1.25rem;
+      margin-bottom: 30px;
       animation: fadeInUp 1.5s ease;
-      max-width: 90%;
+      max-width: 800px;
+      color: #e0e0e0;
+      font-weight: 300;
     }
 
-    .hero button {
-      margin-top: 25px;
-      padding: 12px 25px;
+    .hero-btn-group {
+      display: flex;
+      gap: 15px;
+      animation: fadeInUp 2s ease;
+    }
+
+    .btn-primary {
+      padding: 12px 30px;
       background: #ffcc00;
       color: #003366;
       border: none;
-      border-radius: 5px;
-      font-weight: bold;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 1rem;
       cursor: pointer;
-      z-index: 1;
-      animation: fadeInUp 2s ease;
-      transition: background 0.3s ease;
+      text-decoration: none;
+      transition: transform 0.2s ease, background 0.3s ease;
+      box-shadow: 0 4px 15px rgba(255, 204, 0, 0.4);
     }
 
-    .hero button:hover {
+    .btn-primary:hover {
       background: #ffd633;
+      transform: translateY(-3px);
     }
 
-    @keyframes fadeInDown {
-      from { opacity: 0; transform: translateY(-30px); }
-      to { opacity: 1; transform: translateY(0); }
+    .btn-secondary {
+      padding: 12px 30px;
+      background: transparent;
+      color: #fff;
+      border: 2px solid #fff;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.3s ease;
     }
 
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
+    .btn-secondary:hover {
+      background: rgba(255,255,255,0.1);
+      transform: translateY(-3px);
     }
 
-    /* Footer */
-    footer {
-      background: #003366;
+    /* WHO WE ARE SECTION */
+    .intro-section {
+      padding: 70px 20px;
+      background: #ffffff;
+      text-align: center;
+    }
+    
+    .intro-section h2 {
+      color: #003366;
+      margin-bottom: 20px;
+      font-size: 2.2rem;
+    }
+
+    .intro-section p {
+      max-width: 750px;
+      margin: 0 auto 40px auto;
+      line-height: 1.7;
+      color: #555;
+      font-size: 1.1rem;
+    }
+
+    .stats {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .stat-box {
+      background: #f8f9fb;
+      border-left: 5px solid #ffcc00;
+      padding: 20px 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      min-width: 200px;
+      border-radius: 4px;
+      text-align: left;
+    }
+
+    .stat-box h3 {
+      color: #003366;
+      margin-bottom: 5px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .stat-box span {
+      color: #666;
+      font-size: 1rem;
+    }
+
+    /* SERVICES PREVIEW */
+    .services-snap {
+      padding: 70px 20px;
+      background: #f0f4fa;
+      text-align: center;
+    }
+
+    .services-snap h2 {
+      color: #003366;
+      margin-bottom: 10px;
+      font-size: 2rem;
+    }
+
+    .subtitle {
+      color: #666;
+      margin-bottom: 40px;
+      font-size: 1rem;
+    }
+
+    .service-row {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    .svc-box {
+      background: white;
+      padding: 30px;
+      width: 320px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      border-top: 5px solid #007bff;
+      transition: transform 0.3s ease;
+      text-align: left;
+    }
+
+    .svc-box:hover {
+      transform: translateY(-5px);
+    }
+
+    .svc-box h3 {
+      font-size: 1.3rem;
+      margin-bottom: 15px;
+      color: #003366;
+    }
+
+    .svc-box p {
+      font-size: 0.95rem;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    /* CTA SECTION */
+    .cta-section {
+      background: linear-gradient(rgba(0, 51, 102, 0.9), rgba(0, 51, 102, 0.9)), url('assets/office-bg.jpeg');
+      background-size: cover;
+      background-attachment: fixed;
       color: white;
       text-align: center;
-      padding: 20px 10px;
+      padding: 80px 20px;
+    }
+
+    .cta-section h2 {
+      margin-bottom: 15px;
+      font-size: 2rem;
+    }
+
+    .cta-section p {
+      margin-bottom: 30px;
+      opacity: 0.9;
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background: #ffcc00;
+      color: #003366;
+      padding: 15px 35px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+
+    .cta-button:hover {
+      background: #fff;
+      color: #003366;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #002244;
+      color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+      padding: 30px 10px;
       font-size: 0.9rem;
+      border-top: 4px solid #ffcc00;
     }
 
     footer a {
@@ -168,61 +319,76 @@ nav ul li a:hover {
       text-decoration: underline;
     }
 
-/* Responsive Layot - Keep header horizontal but flexible */
-   @media (max-width: 768px) {
+    /* FLOATING WHATSAPP */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 60px;
+      height: 60px;
+      background-color: #25d366;
+      color: #FFF;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 2px 2px 3px #999;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s ease;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+    }
+
+    .whatsapp-float img {
+      width: 35px;
+      height: 35px;
+    }
+
+    /* ANIMATIONS */
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* RESPONSIVE DESIGN */
+    @media (max-width: 768px) {
       header {
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 10px 20px;
-      }
-
-      nav ul {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-direction: column;
         gap: 15px;
+        padding: 15px 10px;
       }
-
-      nav ul li a {
-        font-size: 0.9rem;
+      nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
       }
-
-      header img {
-        height: 50px;
-        margin-bottom: 5px;
-      } 
-
-      .hero {
-        min-height: calc(100vh - 140px);
-        padding: 70px 10px;
-      }
-
       .hero h1 {
         font-size: 2rem;
       }
-
-      .hero p {
-        font-size: 1rem;
+      .hero-btn-group {
+        flex-direction: column;
+        width: 100%;
       }
-
-      footer {
-        font-size: 0.85rem;
+      .btn-primary, .btn-secondary {
+        width: 100%;
+        text-align: center;
       }
-    }
-
-    @media (max-width: 480px) {
-      .hero h1 {
-        font-size: 1.6rem;
-      }
-
-      .hero p {
-        font-size: 0.95rem;
+      .stat-box, .svc-box {
+        width: 100%;
       }
     }
-      
   </style>
 </head>
 <body>
+
   <header>
     <img src="logo.png" alt="A.M DIGITAL HEALTH HUB Logo" />
     <nav>
@@ -237,26 +403,77 @@ nav ul li a:hover {
   </header>
 
   <section class="hero">
-    <h1>Welcome to A.M DIGITAL HEALTH HUB</h1>
-    <p>Empowering Communities through Digital Health and IT Solutions</p>
-    <button onclick="goToAbout()">Learn More</button>
+    <h1>Transforming Healthcare through<br>Digital Innovation</h1>
+    <p>Empowering communities across Nigeria and beyond with cutting-edge IT training, Digital Health solutions, and Data Management.</p>
+    
+    <div class="hero-btn-group">
+      <a href="about.html" class="btn-primary">Who We Are</a>
+      <a href="contact.html" class="btn-secondary">Partner With Us</a>
+    </div>
   </section>
+
+  <section class="intro-section">
+    <div class="container">
+      <h2>We Are A.M Digital Health Hub</h2>
+      <p>
+        A legally registered, forward-thinking organization based in Azare. 
+        We operate at the intersection of technology and health, dedicated to bridging the digital divide 
+        and building capacity for individuals and institutions.
+      </p>
+      <div class="stats">
+        <div class="stat-box">
+          <h3>Status</h3>
+          <span>Legally Registered</span>
+        </div>
+        <div class="stat-box">
+          <h3>Location</h3>
+          <span>Based in Bauchi</span>
+        </div>
+        <div class="stat-box">
+          <h3>Focus</h3>
+          <span>Health IT & Training</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services-snap">
+    <h2>Our Core Areas</h2>
+    <p class="subtitle">Delivering impact through three main pillars</p>
+    
+    <div class="service-row">
+      <div class="svc-box">
+        <h3>💻 Capacity Building</h3>
+        <p>Providing high-impact IT training and digital literacy programs for students, health workers, and organizations.</p>
+      </div>
+
+      <div class="svc-box">
+        <h3>🏥 Digital Health</h3>
+        <p>Implementing user-friendly technology to improve healthcare delivery, data security, and patient outcomes.</p>
+      </div>
+
+      <div class="svc-box">
+        <h3>📊 Consultancy</h3>
+        <p>Offering expert guidance on information systems, data management, and technology-driven community programs.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <h2>Let's Collaborate</h2>
+    <p>We are actively seeking partnerships with NGOs, Government Agencies, and Private Organizations to expand our reach.</p>
+    <a href="contact.html" class="cta-button">Get in Touch</a>
+  </section>
+
+  <a href="https://wa.me/2348089454939" target="_blank" class="whatsapp-float">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Chat on WhatsApp">
+  </a>
 
   <footer>
     <p>&copy; 2025 A.M DIGITAL HEALTH HUB | All Rights Reserved</p>
+    <p>Located in Azare, Bauchi State</p>
     <p>Developed by <a href="#">Alhassan Mujtaba</a></p>
   </footer>
 
-  <script>
-    function goToAbout() {
-      window.location.href = 'about.html';
-    }
-  </script>
 </body>
 </html>
-
-
-
-
-
-
