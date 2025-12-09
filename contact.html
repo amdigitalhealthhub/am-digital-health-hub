@@ -3,33 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  
-  <!-- SEO Meta Tags -->
-<meta name="description" content="A.M DIGITAL HEALTH HUB is a leading Information Technology and Digital Health company offering innovative solutions, IT training, and digital health services across Nigeria.">
-<meta name="keywords" content="Digital Health, Information Technology, Health IT, IT Training, A.M DIGITAL HEALTH HUB, Nigeria Health Tech, Health Innovation">
-<meta name="author" content="A.M DIGITAL HEALTH HUB">
-
-<!-- Open Graph / Social Media Meta Tags -->
-<meta property="og:title" content="A.M DIGITAL HEALTH HUB | Empowering Digital Health and IT Solutions">
-<meta property="og:description" content="Explore our IT and Digital Health innovations designed to improve lives and connect communities through technology.">
-<meta property="og:image" content="logo.png"> <!-- Path to your logo -->
-<meta property="og:url" content="https://amdigitalhealthhub.github.io/am-digital-health-hub/">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="A.M DIGITAL HEALTH HUB">
-
-<!-- Twitter Card Meta -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="A.M DIGITAL HEALTH HUB | Empowering Digital Health and IT Solutions">
-<meta name="twitter:description" content="Explore our IT and Digital Health innovations designed to improve lives and connect communities through technology.">
-<meta name="twitter:image" content="logo.png">
-
-
-  
-  <title>Contact | A.M DIGITAL HEALTH HUB</title>
+  <title>Contact Us | A.M DIGITAL HEALTH HUB</title>
   <link rel="icon" type="image/png" href="logo.png">
-  
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <meta name="description" content="Contact A.M DIGITAL HEALTH HUB in Azare, Bauchi State. Get in touch for IT training, digital health solutions, and partnerships.">
+  <meta name="keywords" content="Contact A.M DIGITAL HEALTH HUB, Azare Tech Company, Digital Health Nigeria Contact, Bauchi IT Training Address">
+  <meta name="author" content="A.M DIGITAL HEALTH HUB">
+
   <style>
+    /* GLOBAL STYLES */
     * {
       margin: 0;
       padding: 0;
@@ -38,24 +24,28 @@
     }
 
     body {
-      background: #f9fafc;
-      color: #111;
-      line-height: 1.6;
+      background: #f8f9fb;
+      color: #333;
+      overflow-x: hidden;
     }
 
-   header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: linear-gradient(90deg, #003366, #007bff);
-    padding: 15px 30px;
-    color: white;
-    flex-wrap: nowrap; /* ✅ keep horizontal */
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
-  }
+    /* HEADER */ 
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: linear-gradient(90deg, #003366, #007bff);
+      padding: 15px 5%;
+      color: white;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
 
     header img {
-      height: 60px;
+      height: 50px;
       width: auto;
     }
 
@@ -64,177 +54,140 @@
       display: flex;
       margin: 0;
       padding: 0;
-      flex-wrap: nowrap; /* ✅ prevent wrapping */
-      gap: 25px;
+      gap: 20px;
     }
 
     nav ul li a {
       color: white;
       text-decoration: none;
       font-weight: 500;
+      font-size: 0.95rem;
       transition: color 0.3s ease;
-      white-space: nowrap; /* ✅ prevent text break */
+      white-space: nowrap;
     }
 
     nav ul li a:hover {
       color: #ffcc00;
     }
 
-/* ✅ optional: make horizontal scroll appear if small phone width */
-  @media (max-width: 600px) {
-    header {
-    overflow-x: auto;
-      }
-    }
-
-   @keyframes fadeInDown {
-      from { opacity: 0; transform: translateY(-30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    /* Footer */
-    footer {
+    /* PAGE HERO */
+    .page-hero {
       background: #003366;
       color: white;
       text-align: center;
-      padding: 20px 10px;
-      font-size: 0.9rem;
+      padding: 60px 20px;
     }
 
-    footer a {
-      color: #ffcc00;
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-    }
-
-/* Responsive Layot - Keep header horizontal but flexible */
-   @media (max-width: 768px) {
-      header {
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 10px 20px;
-      }
-
-      nav ul {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-      }
-
-      nav ul li a {
-        font-size: 0.9rem;
-      }
-
-      header img {
-        height: 50px;
-        margin-bottom: 5px;
-      } 
-
-      .hero {
-        min-height: calc(100vh - 140px);
-        padding: 70px 10px;
-      }
-
-      .hero h1 {
-        font-size: 2rem;
-      }
-
-      .hero p {
-        font-size: 1rem;
-      }
-
-      footer {
-        font-size: 0.85rem;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .hero h1 {
-        font-size: 1.6rem;
-      }
-
-      .hero p {
-        font-size: 0.95rem;
-      }
-    }
-
-    
-    
-    section.contact {
-      padding: 70px 10%;
-      background: white;
-    }
-
-    section.contact h1 {
+    .page-hero h1 {
       font-size: 2.5rem;
-      color: #003366;
-      text-align: center;
-      margin-bottom: 50px;
-      position: relative;
-    }
-
-    section.contact h1::after {
-      content: "";
-      width: 80px;
-      height: 4px;
-      background: #007bff;
-      display: block;
-      margin: 10px auto 0;
-      border-radius: 2px;
-    }
-
-    .contact-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 50px;
-      justify-content: space-between;
-    }
-
-    .contact-info, .contact-form {
-      flex: 1 1 45%;
-    }
-
-    .contact-info h2, .contact-form h2 {
-      color: #003366;
-      margin-bottom: 20px;
-    }
-
-    .contact-info p {
-      color: #000;
       margin-bottom: 10px;
     }
 
-    .contact-form form {
+    .page-hero p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    /* CONTACT CONTAINER */
+    .contact-section {
+      padding: 60px 5%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .contact-wrapper {
       display: flex;
-      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: space-between;
+      background: white;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    }
+
+    /* Left Side: Info & Map */
+    .contact-info {
+      flex: 1 1 45%;
+    }
+
+    .contact-info h2 {
+      color: #003366;
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+    }
+
+    .info-item {
+      margin-bottom: 20px;
+    }
+
+    .info-item h3 {
+      font-size: 1.1rem;
+      color: #007bff;
+      margin-bottom: 5px;
+    }
+
+    .info-item p {
+      color: #555;
+    }
+
+    /* Google Map Styling */
+    .map-container {
+      margin-top: 30px;
+      width: 100%;
+      height: 250px;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 2px solid #eee;
+    }
+
+    .map-container iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    /* Right Side: Form */
+    .contact-form {
+      flex: 1 1 45%;
+      background: #f0f4fa;
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    .contact-form h2 {
+      color: #003366;
+      margin-bottom: 20px;
+      font-size: 1.8rem;
     }
 
     .contact-form input, 
     .contact-form textarea {
-      padding: 12px;
-      margin-bottom: 15px;
-      border-radius: 6px;
+      width: 100%;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 5px;
       border: 1px solid #ccc;
       font-size: 1rem;
+      outline: none;
+      transition: border 0.3s;
+    }
+
+    .contact-form input:focus, 
+    .contact-form textarea:focus {
+      border-color: #007bff;
     }
 
     .contact-form button {
-      padding: 12px;
+      width: 100%;
+      padding: 15px;
       border: none;
       background: #007bff;
       color: white;
       font-weight: bold;
-      border-radius: 6px;
+      border-radius: 5px;
       cursor: pointer;
+      font-size: 1rem;
       transition: background 0.3s ease;
     }
 
@@ -242,46 +195,110 @@
       background: #0056b3;
     }
 
-    #formsStatus {
-      margin-top: 10px;
+    #formStatus {
+      margin-top: 15px;
       font-weight: bold;
       text-align: center;
     }
 
+    /* SOCIAL MEDIA SECTION */
+    .social-section {
+      text-align: center;
+      padding: 60px 20px;
+      background: #eef2f6;
+      margin-top: 60px;
+    }
 
-    .social-media {
-  text-align: center;
-  padding: 40px 20px;
-  background: #f0f4f8;
-}
+    .social-section h2 {
+      color: #003366;
+      margin-bottom: 30px;
+    }
 
-.social-media h2 {
-  margin-bottom: 20px;
-  color: #003366;
-  font-size: 2rem;
-}
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
 
-.social-icons {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  flex-wrap: wrap;
-}
+    .social-icons a {
+      display: inline-block;
+      transition: transform 0.3s ease;
+    }
 
-.social-icons a img {
-  width: 40px;
-  height: 40px;
-  transition: transform 0.3s ease;
-}
+    .social-icons a:hover {
+      transform: translateY(-5px);
+    }
 
-.social-icons a img:hover {
-  transform: scale(1.2);
-}
-    
-   
+    .social-icons img {
+      width: 50px;
+      height: 50px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #002244;
+      color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+      padding: 30px 10px;
+      font-size: 0.9rem;
+      border-top: 4px solid #ffcc00;
+    }
+
+    footer a {
+      color: #ffcc00;
+      text-decoration: none;
+    }
+
+    /* FLOATING WHATSAPP */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 60px;
+      height: 60px;
+      background-color: #25d366;
+      color: #FFF;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 2px 2px 3px #999;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s ease;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+    }
+
+    .whatsapp-float img {
+      width: 35px;
+      height: 35px;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 10px;
+      }
+      nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .contact-wrapper {
+        flex-direction: column;
+        padding: 20px;
+      }
+    }
   </style>
 </head>
 <body>
+
   <header>
     <img src="logo.png" alt="A.M DIGITAL HEALTH HUB Logo" />
     <nav>
@@ -290,60 +307,92 @@
         <li><a href="about.html">About</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="contact">
+  <section class="page-hero">
     <h1>Contact Us</h1>
-    <div class="contact-container">
+    <p>We'd love to hear from you. Get in touch today!</p>
+  </section>
+
+  <section class="contact-section">
+    <div class="contact-wrapper">
+      
       <div class="contact-info">
         <h2>Get In Touch</h2>
-        <p><strong>Address:</strong> Matsango Azare, Bauchi State, Nigeria</p>
-        <p><strong>Email:</strong> amdigitalhealthhub@gmail.com</p>
-        <p><strong>Office Hours:</strong> Mon - Fri, 9:00 AM - 5:00 PM</p>
+        
+        <div class="info-item">
+          <h3>📍 Our Address</h3>
+          <p>Matsango Azare, Bauchi State, Nigeria</p>
+        </div>
+
+        <div class="info-item">
+          <h3>📧 Email Us</h3>
+          <p>amdigitalhealthhub@gmail.com</p>
+        </div>
+
+        <div class="info-item">
+          <h3>🕒 Office Hours</h3>
+          <p>Mon - Fri: 9:00 AM - 5:00 PM</p>
+        </div>
+
+        <div class="map-container">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62456.91866752078!2d10.155459349999999!3d11.67605965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1102b0c510825319%3A0xc35489871790403!2sAzare%2C%20Bauchi!5e0!3m2!1sen!2sng!4v1701234567890!5m2!1sen!2sng" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
       </div>
 
-       <div class="contact-form">
-        <h2>Send Us a Message</h2>
+      <div class="contact-form">
+        <h2>Send a Message</h2>
         <form id="contactForm" action="https://formspree.io/f/mgvrwjzw" method="POST">
-          <input type="text" name="name" placeholder="Your Name" required>
-          <input type="email" name="email" placeholder="Your Email" required>
-          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <label>Name</label>
+          <input type="text" name="name" placeholder="Enter your full name" required>
+          
+          <label>Email</label>
+          <input type="email" name="email" placeholder="Enter your email address" required>
+          
+          <label>Message</label>
+          <textarea name="message" rows="5" placeholder="How can we help you?" required></textarea>
+          
           <button type="submit">Send Message</button>
           <p id="formStatus"></p>
         </form>
       </div>
+
     </div>
   </section>
 
-<br>
-</br>
-  <br>
-  </br>
+  <section class="social-section">
+    <h2>Connect with Us</h2>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/share/19uipVWJs8/" target="_blank" aria-label="Facebook">
+        <img src="assets/facebook.png" alt="Facebook" />
+      </a>
+      <a href="https://x.com/AM_DigitalHealt?t=SF7xO812lId9wUdSsH2ciw&s=09" target="_blank" aria-label="Twitter">
+        <img src="assets/twitter.png" alt="X / Twitter" />
+      </a>
+      <a href="https://www.linkedin.com/company/am-digital-health-hub/" target="_blank" aria-label="LinkedIn">
+        <img src="assets/linkedin.png" alt="LinkedIn" />
+      </a>
+      <a href="https://www.instagram.com/amdigitalhealthhub?igsh=eGYxMHluOWtkYTNn" target="_blank" aria-label="Instagram">
+        <img src="assets/instagram.png" alt="Instagram" />
+      </a>
+    </div>
+  </section>
 
-  <section class="social-media">
-  <h2>Connect with Us</h2>
-  <div class="social-icons">
-    <a href="https://www.facebook.com/share/19uipVWJs8/" target="_blank" aria-label="Facebook">
-      <img src="assets/facebook.png" alt="Facebook" />
-    </a>
-    <a href="https://x.com/AM_DigitalHealt?t=SF7xO812lId9wUdSsH2ciw&s=09" target="_blank" aria-label="Twitter">
-      <img src="assets/twitter.png" alt="Twitter" />
-    </a>
-    <a href="https://www.linkedin.com/company/am-digital-health-hub/" target="_blank" aria-label="LinkedIn">
-      <img src="assets/linkedin.png" alt="LinkedIn" />
-    </a>
-    <a href="https://www.instagram.com/amdigitalhealthhub?igsh=eGYxMHluOWtkYTNn" target="_blank" aria-label="Instagram">
-      <img src="assets/instagram.png" alt="Instagram" />
-    </a>
-  </div>
-</section>
+  <a href="https://wa.me/2348089454939" target="_blank" class="whatsapp-float">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Chat on WhatsApp">
+  </a>
 
-  
   <footer>
     <p>&copy; 2025 A.M DIGITAL HEALTH HUB | All Rights Reserved</p>
+    <p>Located in Azare, Bauchi State</p>
     <p>Developed by <a href="#">Alhassan Mujtaba</a></p>
   </footer>
 
@@ -354,6 +403,8 @@
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
       status.textContent = "Sending message...";
+      status.style.color = "blue";
+      
       try {
         const response = await fetch(form.action, {
           method: form.method,
@@ -365,23 +416,15 @@
           status.style.color = "green";
           form.reset();
         } else {
-          status.textContent = "❌ Failed to send message. Try again.";
+          status.textContent = "❌ Failed to send message. Please try again.";
           status.style.color = "red";
         }
       } catch (error) {
-        status.textContent = "⚠️ Network error. Please try again later.";
+        status.textContent = "⚠️ Network error. Please check your connection.";
         status.style.color = "orange";
       }
     });
   </script>
+
 </body>
 </html>
-
-
-
-
-
-
-
-
-
