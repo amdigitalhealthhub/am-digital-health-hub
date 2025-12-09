@@ -3,174 +3,291 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  
-  <!-- SEO Meta Tags -->
-<meta name="description" content="A.M DIGITAL HEALTH HUB is a leading Information Technology and Digital Health company offering innovative solutions, IT training, and digital health services across Nigeria.">
-<meta name="keywords" content="Digital Health, Information Technology, Health IT, IT Training, A.M DIGITAL HEALTH HUB, Nigeria Health Tech, Health Innovation">
-<meta name="author" content="A.M DIGITAL HEALTH HUB">
-
-<!-- Open Graph / Social Media Meta Tags -->
-<meta property="og:title" content="A.M DIGITAL HEALTH HUB | Empowering Digital Health and IT Solutions">
-<meta property="og:description" content="Explore our IT and Digital Health innovations designed to improve lives and connect communities through technology.">
-<meta property="og:image" content="logo.png"> <!-- Path to your logo -->
-<meta property="og:url" content="https://amdigitalhealthhub.github.io/am-digital-health-hub/">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="A.M DIGITAL HEALTH HUB">
-
-<!-- Twitter Card Meta -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="A.M DIGITAL HEALTH HUB | Empowering Digital Health and IT Solutions">
-<meta name="twitter:description" content="Explore our IT and Digital Health innovations designed to improve lives and connect communities through technology.">
-<meta name="twitter:image" content="logo.png">
-
-  
   <title>About Us | A.M DIGITAL HEALTH HUB</title>
   <link rel="icon" type="image/png" href="logo.png">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <meta name="description" content="Learn about A.M DIGITAL HEALTH HUB - Our mission, vision, values, and leadership driving healthcare innovation in Nigeria.">
+  <meta name="keywords" content="About A.M DIGITAL HEALTH HUB, Digital Health Mission, Health IT Vision, Nigeria Tech Company, Alhassan Mujtaba">
+  <meta name="author" content="A.M DIGITAL HEALTH HUB">
+
   <style>
-  * {
+    /* GLOBAL STYLES */
+    * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
       font-family: "Poppins", sans-serif;
     }
 
-      body {
-      background: #f9fafc;
-      color: #111;
+    body {
+      background: #f8f9fb;
+      color: #333;
       line-height: 1.6;
-
+      overflow-x: hidden;
     }
 
-/* Header */ 
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: linear-gradient(90deg, #003366, #007bff);
-  padding: 15px 30px;
-  color: white;
-  flex-wrap: nowrap; /* ✅ keep horizontal */
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
-}
+    /* HEADER */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: linear-gradient(90deg, #003366, #007bff);
+      padding: 15px 5%;
+      color: white;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
 
-header img {
-  height: 60px;
-  width: auto;
-}
+    header img {
+      height: 50px;
+      width: auto;
+    }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-  flex-wrap: nowrap; /* ✅ prevent wrapping */
-  gap: 25px;
-}
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+      gap: 20px;
+    }
 
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
-  white-space: nowrap; /* ✅ prevent text break */
-}
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: color 0.3s ease;
+      white-space: nowrap;
+    }
 
-nav ul li a:hover {
-  color: #ffcc00;
-}
+    nav ul li a:hover {
+      color: #ffcc00;
+    }
 
-/* ✅ optional: make horizontal scroll appear if small phone width */
-@media (max-width: 600px) {
-  header {
-    overflow-x: auto;
-  }
-}
+    /* HERO SECTION */
+    .about-hero {
+      background: #003366;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
 
-    
-        section.about {
-      padding: 70px 10%;
+    .about-hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .about-hero p {
+      font-size: 1.1rem;
+      color: #e0e0e0;
+    }
+
+    /* MAIN CONTAINER */
+    .about-section {
+      padding: 60px 5%;
+      max-width: 1200px;
+      margin: 0 auto;
       background: white;
     }
 
-    section.about h1 {
-      font-size: 2.5rem;
-      color: #003366;
-      text-align: center;
-      margin-bottom: 40px;
-      position: relative;
-    }
-
-    section.about h1::after {
-      content: "";
-      width: 80px;
-      height: 4px;
-      background: #007bff;
-      display: block;
-      margin: 10px auto 0;
-      border-radius: 2px;
-    }
-
+    /* WHO WE ARE */
     .about-content {
       display: flex;
       flex-wrap: wrap;
       gap: 40px;
-      align-items: center;
+      align-items: flex-start;
+      margin-bottom: 60px;
     }
 
     .about-text {
       flex: 1 1 55%;
-      color: #000;
     }
 
     .about-text h2 {
-      color: #111;
-      margin-bottom: 10px;
+      color: #003366;
+      margin-bottom: 20px;
       font-size: 1.8rem;
+      position: relative;
+    }
+
+    .about-text h2::after {
+      content: "";
+      width: 60px;
+      height: 4px;
+      background: #ffcc00;
+      display: block;
+      margin-top: 8px;
+      border-radius: 2px;
     }
 
     .about-text p {
       font-size: 1.05rem;
       margin-bottom: 20px;
-      color: #222;
+      color: #444;
+      text-align: justify;
     }
 
     .about-image {
-      flex: 1 1 40%;
+      flex: 1 1 35%;
       text-align: center;
+      background: #f0f4fa;
+      border-radius: 10px;
+      padding: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     }
 
     .about-image img {
       max-width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+      height: auto;
+      border-radius: 8px;
+      display: block;
     }
 
+    /* MISSION & VISION */
     .mission-vision {
-      margin-top: 60px;
-      background: #f0f4fa;
-      padding: 40px;
-      border-radius: 10px;
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-bottom: 60px;
     }
 
-    .mission-vision h3 {
+    .mv-box {
+      flex: 1;
+      background: #f8f9fb;
+      padding: 35px;
+      border-radius: 10px;
+      border-left: 5px solid #003366;
+      min-width: 300px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    }
+
+    .mv-box h3 {
       color: #003366;
       margin-bottom: 15px;
+      font-size: 1.5rem;
     }
 
-    .mission-vision p {
-      color: #000;
-      margin-bottom: 20px;
+    .mv-box p {
+      color: #333;
+      font-size: 1rem;
+      line-height: 1.7;
     }
 
-    footer {
-      background: #003366;
-      color: white;
+    /* CORE VALUES SECTION */
+    .values-section {
       text-align: center;
-      padding: 20px 10px;
+      margin-bottom: 80px;
+    }
+
+    .values-section h2 {
+      color: #003366;
+      margin-bottom: 40px;
+      font-size: 2rem;
+    }
+
+    .values-grid {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .value-card {
+      background: white;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 30px 20px;
+      width: 250px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+      border-top: 4px solid #ffcc00;
+    }
+
+    .value-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .value-card h3 {
+      color: #003366;
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+
+    .value-card p {
+      font-size: 0.95rem;
+      color: #666;
+    }
+
+    /* LEADERSHIP / FOUNDER SECTION */
+    .leadership-section {
+      background: #f0f4fa;
+      padding: 60px 20px;
+      border-radius: 15px;
+      text-align: center;
+    }
+
+    .leadership-section h2 {
+      color: #003366;
+      margin-bottom: 40px;
+    }
+
+    .founder-card {
+      background: white;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      text-align: left;
+    }
+
+    .founder-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #ffcc00;
+      flex-shrink: 0;
+    }
+
+    .founder-info h3 {
+      color: #003366;
+      font-size: 1.5rem;
+      margin-bottom: 5px;
+    }
+
+    .founder-info span {
+      display: block;
+      color: #007bff;
+      font-weight: 600;
+      margin-bottom: 15px;
       font-size: 0.9rem;
-      margin-top: 60px;
+      text-transform: uppercase;
+    }
+
+    .founder-info p {
+      color: #555;
+      font-style: italic;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #002244;
+      color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+      padding: 30px 10px;
+      font-size: 0.9rem;
+      border-top: 4px solid #ffcc00;
     }
 
     footer a {
@@ -178,83 +295,62 @@ nav ul li a:hover {
       text-decoration: none;
     }
 
-    footer a:hover {
-      text-decoration: underline;
+    /* FLOATING WHATSAPP */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 60px;
+      height: 60px;
+      background-color: #25d366;
+      color: #FFF;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 2px 2px 3px #999;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s ease;
     }
 
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+    }
+
+    .whatsapp-float img {
+      width: 35px;
+      height: 35px;
+    }
+
+    /* RESPONSIVE DESIGN */
     @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 10px;
+      }
+      nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
       .about-content {
         flex-direction: column;
       }
-
       .about-text, .about-image {
-        flex: 1 1 100%;
+        width: 100%;
+        flex: auto;
+      }
+      .founder-card {
+        flex-direction: column;
+        text-align: center;
       }
     }
-
-      
-
-
-    /* Responsive Layot - Keep header horizontal but flexible */
-   @media (max-width: 768px) {
-      header {
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 10px 20px;
-      }
-
-      nav ul {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-      }
-
-      nav ul li a {
-        font-size: 0.9rem;
-      }
-
-      header img {
-        height: 50px;
-        margin-bottom: 5px;
-      } 
-
-      .hero {
-        min-height: calc(100vh - 140px);
-        padding: 70px 10px;
-      }
-
-      .hero h1 {
-        font-size: 2rem;
-      }
-
-      .hero p {
-        font-size: 1rem;
-      }
-
-      footer {
-        font-size: 0.85rem;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .hero h1 {
-        font-size: 1.6rem;
-      }
-
-      .hero p {
-        font-size: 0.95rem;
-      }
-    }
-
-
-
-
-    
-    
   </style>
 </head>
 <body>
+
   <header>
     <img src="logo.png" alt="A.M DIGITAL HEALTH HUB Logo" />
     <nav>
@@ -268,56 +364,95 @@ nav ul li a:hover {
     </nav>
   </header>
 
-  <section class="about">
-    <h1>About A.M DIGITAL HEALTH HUB</h1>
+  <section class="about-hero">
+    <h1>About Us</h1>
+    <p>Innovating Healthcare through Technology</p>
+  </section>
 
+  <section class="about-section">
+    
     <div class="about-content">
       <div class="about-text">
         <h2>Who We Are</h2>
         <p>
-          <strong>A.M DIGITAL HEALTH HUB</strong> is a forward-thinking Information Technology and Digital Health company dedicated to transforming how individuals, communities, and organizations access and use technology for improved health outcomes. We operate at the intersection of <strong>technology, health informatics, digital innovation, and capacity building</strong>.
+          <strong>A.M DIGITAL HEALTH HUB</strong> is a forward-thinking Information Technology and Digital Health company dedicated to transforming how individuals, communities, and organizations access and use technology. We operate at the intersection of <strong>technology, health informatics, digital innovation, and capacity building</strong>.
         </p>
         <p>
-          We provide a wide range of services including digital health solutions, information systems support, data management, IT training, consultancy, and technology-driven community development programs. Our company focuses on bridging the digital divide by empowering people, institutions, and underserved populations with innovative, affordable, and user-friendly digital tools.
+          We provide a wide range of services including digital health solutions, information systems support, data management, IT training, and technology-driven community development programs. Our company focuses on bridging the digital divide by empowering people and institutions with innovative, affordable, and user-friendly digital tools.
         </p>
         <p>
-          With a strong commitment to quality and impact, A.M DIGITAL HEALTH HUB collaborates with NGOs, government agencies, healthcare institutions, educational bodies, and private organizations to deliver meaningful and sustainable digital solutions. Our work is built on professionalism, integrity, innovation, and measurable results.
+          Collaborating with NGOs, government agencies, and healthcare institutions across Nigeria, our work is built on professionalism, integrity, and measurable social impact.
         </p>
       </div>
 
       <div class="about-image">
-        <img src="assets/team.png" alt="Our Team" />
+        <img src="assets/team.png" alt="Our Team at A.M DIGITAL HEALTH HUB" />
       </div>
     </div>
 
     <div class="mission-vision">
-      <h3>Our Mission</h3>
-      <p>
-        Our mission is to empower communities and institutions through innovative Information Technology and Digital Health solutions. We aim to enhance healthcare delivery, strengthen digital capacity, promote data-driven decision-making, and improve access to quality digital services.  
-      </p>
-      <p>
-        We are committed to supporting organizations with reliable digital tools, providing high-impact IT training, and advancing digital health systems that are inclusive, secure, and sustainable. Through continuous innovation, we strive to make technology accessible to everyone — from rural communities to large institutions.
-      </p>
+      <div class="mv-box">
+        <h3>Our Mission</h3>
+        <p>
+          To empower communities and institutions through innovative Information Technology and Digital Health solutions. We aim to enhance healthcare delivery, strengthen digital capacity, and promote data-driven decision-making.
+        </p>
+      </div>
 
-      <h3>Our Vision</h3>
-      <p>
-        Our vision is to become a leading Digital Health and Information Technology hub in Africa — recognized for excellence, innovation, and social impact. We aspire to build a future where technology enhances healthcare delivery, strengthens education, empowers youth, and accelerates community development.
-      </p>
-      <p>
-        We envision a digitally connected Africa where individuals, organizations, and healthcare systems have the tools and skills needed to thrive in a modern, technology-driven world.
-      </p>
+      <div class="mv-box">
+        <h3>Our Vision</h3>
+        <p>
+          To become a leading Digital Health and Information Technology hub in Africa — recognized for excellence, innovation, and social impact. We aspire to build a future where technology enhances healthcare delivery and education.
+        </p>
+      </div>
     </div>
+
+    <div class="values-section">
+      <h2>Our Core Values</h2>
+      <div class="values-grid">
+        <div class="value-card">
+          <h3>Innovation</h3>
+          <p>We embrace new technologies to solve old problems in healthcare and education.</p>
+        </div>
+        <div class="value-card">
+          <h3>Integrity</h3>
+          <p>We operate with total transparency, trust, and ethical standards.</p>
+        </div>
+        <div class="value-card">
+          <h3>Impact</h3>
+          <p>We focus on measurable results that truly improve lives in our community.</p>
+        </div>
+        <div class="value-card">
+          <h3>Collaboration</h3>
+          <p>We believe in the power of partnerships with NGOs and government bodies.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="leadership-section">
+      <h2>Our Leadership</h2>
+      <div class="founder-card">
+        <img src="assets/founder.png" alt="Alhassan Mujtaba" class="founder-img" />
+        <div class="founder-info">
+          <h3>Hassan Al-mujtaba Ja'afar</h3>
+          <span>Founder & Lead Strategist</span>
+          <p>
+            "I founded A.M DIGITAL HEALTH HUB with a single goal: to ensure that no community in Nigeria is left behind in the digital health revolution. We are here to serve, to train, and to innovate."
+          </p>
+        </div>
+      </div>
+    </div>
+
   </section>
+
+  <a href="https://wa.me/2348089454939" target="_blank" class="whatsapp-float">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Chat on WhatsApp">
+  </a>
 
   <footer>
     <p>&copy; 2025 A.M DIGITAL HEALTH HUB | All Rights Reserved</p>
+    <p>Located in Azare, Bauchi State</p>
     <p>Developed by <a href="#">Alhassan Mujtaba</a></p>
   </footer>
+
 </body>
 </html>
-
-
-
-
-
-
