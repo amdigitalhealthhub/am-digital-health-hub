@@ -3,31 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-<!-- SEO Meta Tags -->
-<meta name="description" content="A.M DIGITAL HEALTH HUB is a leading Information Technology and Digital Health company offering innovative solutions, IT training, and digital health services across Nigeria.">
-<meta name="keywords" content="Digital Health, Information Technology, Health IT, IT Training, A.M DIGITAL HEALTH HUB, Nigeria Health Tech, Health Innovation">
-<meta name="author" content="A.M DIGITAL HEALTH HUB">
-
-<!-- Open Graph / Social Media Meta Tags -->
-<meta property="og:title" content="A.M DIGITAL HEALTH HUB | Empowering Digital Health and IT Solutions">
-<meta property="og:description" content="Explore our IT and Digital Health innovations designed to improve lives and connect communities through technology.">
-<meta property="og:image" content="logo.png"> <!-- Path to your logo -->
-<meta property="og:url" content="https://amdigitalhealthhub.github.io/am-digital-health-hub/">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="A.M DIGITAL HEALTH HUB">
-
-<!-- Twitter Card Meta -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="A.M DIGITAL HEALTH HUB | Empowering Digital Health and IT Solutions">
-<meta name="twitter:description" content="Explore our IT and Digital Health innovations designed to improve lives and connect communities through technology.">
-<meta name="twitter:image" content="logo.png">
-
- 
   <title>Services | A.M DIGITAL HEALTH HUB</title>
   <link rel="icon" type="image/png" href="logo.png">
-  
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <meta name="description" content="Explore the services of A.M DIGITAL HEALTH HUB: IT Training, Digital Health Solutions, Data Management, and Consultancy in Bauchi State.">
+  <meta name="keywords" content="IT Training Azare, Digital Health Services Nigeria, Health Data Management, NGO Consultancy, Computer Training Bauchi">
+  <meta name="author" content="A.M DIGITAL HEALTH HUB">
+
   <style>
+    /* GLOBAL STYLES */
     * {
       margin: 0;
       padding: 0;
@@ -36,130 +24,152 @@
     }
 
     body {
-      background: #f9fafc;
-      color: #111;
-      line-height: 1.6;
-    }
-  
-    section.services {
-      padding: 70px 10%;
-      background: white;
+      background: #f8f9fb;
+      color: #333;
+      overflow-x: hidden;
     }
 
-    section.services h1 {
-      font-size: 2.5rem;
-      color: #003366;
+    /* HEADER */ 
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: linear-gradient(90deg, #003366, #007bff);
+      padding: 15px 5%;
+      color: white;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header img {
+      height: 50px;
+      width: auto;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: color 0.3s ease;
+      white-space: nowrap;
+    }
+
+    nav ul li a:hover {
+      color: #ffcc00;
+    }
+
+    /* HERO BANNER */
+    .page-hero {
+      background: #003366;
+      color: white;
       text-align: center;
-      margin-bottom: 50px;
-      position: relative;
+      padding: 60px 20px;
     }
 
-    section.services h1::after {
-      content: "";
-      width: 80px;
-      height: 4px;
-      background: #007bff;
-      display: block;
-      margin: 10px auto 0;
-      border-radius: 2px;
+    .page-hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .page-hero p {
+      font-size: 1.1rem;
+      color: #e0e0e0;
+    }
+
+    /* SERVICES GRID SECTION */
+    .services-section {
+      padding: 60px 5%;
+      max-width: 1200px;
+      margin: 0 auto;
     }
 
     .service-container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 30px;
     }
 
     .service-box {
-      background: #f0f4fa;
+      background: white;
       border-radius: 10px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
       padding: 30px;
-      text-align: center;
+      border-top: 5px solid #007bff;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
+      /* Animation settings */
+      opacity: 0;
+      animation: fadeInSlide 0.8s ease forwards;
     }
 
     .service-box:hover {
       transform: translateY(-8px);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     }
 
     .service-box h2 {
       color: #003366;
       margin-bottom: 15px;
-      font-size: 1.4rem;
+      font-size: 1.3rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
     }
 
     .service-box p {
-      color: #000;
-      font-size: 1rem;
+      color: #555;
+      font-size: 0.95rem;
+      line-height: 1.6;
     }
 
-
-
-
-/* Header */ 
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: linear-gradient(90deg, #003366, #007bff);
-  padding: 15px 30px;
-  color: white;
-  flex-wrap: nowrap; /* ✅ keep horizontal */
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
-}
-
-header img {
-  height: 60px;
-  width: auto;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-  flex-wrap: nowrap; /* ✅ prevent wrapping */
-  gap: 25px;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
-  white-space: nowrap; /* ✅ prevent text break */
-}
-
-nav ul li a:hover {
-  color: #ffcc00;
-}
-
-/* ✅ optional: make horizontal scroll appear if small phone width */
-@media (max-width: 600px) {
-  header {
-    overflow-x: auto;
-  }
-}
-
-    @keyframes fadeInDown {
-      from { opacity: 0; transform: translateY(-30px); }
-      to { opacity: 1; transform: translateY(0); }
+    /* CTA SECTION */
+    .cta-section {
+      text-align: center;
+      padding: 60px 20px;
+      background: #eef2f6;
+      margin-top: 40px;
     }
 
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
+    .cta-section h2 {
+      color: #003366;
+      margin-bottom: 15px;
     }
 
-    /* Footer */
-    footer {
+    .btn-contact {
+      display: inline-block;
       background: #003366;
       color: white;
+      padding: 12px 30px;
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: bold;
+      transition: background 0.3s;
+      margin-top: 20px;
+    }
+
+    .btn-contact:hover {
+      background: #002244;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #002244;
+      color: rgba(255, 255, 255, 0.8);
       text-align: center;
-      padding: 20px 10px;
+      padding: 30px 10px;
       font-size: 0.9rem;
+      border-top: 4px solid #ffcc00;
     }
 
     footer a {
@@ -167,92 +177,67 @@ nav ul li a:hover {
       text-decoration: none;
     }
 
-    footer a:hover {
-      text-decoration: underline;
+    /* FLOATING WHATSAPP */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 60px;
+      height: 60px;
+      background-color: #25d366;
+      color: #FFF;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 2px 2px 3px #999;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s ease;
     }
 
-/* Responsive Layot - Keep header horizontal but flexible */
-   @media (max-width: 768px) {
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+    }
+
+    .whatsapp-float img {
+      width: 35px;
+      height: 35px;
+    }
+
+    /* ANIMATIONS */
+    @keyframes fadeInSlide {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Staggered Animation Delays */
+    .service-box:nth-child(1) { animation-delay: 0.1s; }
+    .service-box:nth-child(2) { animation-delay: 0.2s; }
+    .service-box:nth-child(3) { animation-delay: 0.3s; }
+    .service-box:nth-child(4) { animation-delay: 0.4s; }
+    .service-box:nth-child(5) { animation-delay: 0.5s; }
+    .service-box:nth-child(6) { animation-delay: 0.6s; }
+    .service-box:nth-child(7) { animation-delay: 0.7s; }
+    .service-box:nth-child(8) { animation-delay: 0.8s; }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
       header {
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 10px 20px;
-      }
-
-      nav ul {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-direction: column;
         gap: 15px;
+        padding: 15px 10px;
       }
-
-      nav ul li a {
-        font-size: 0.9rem;
-      }
-
-      header img {
-        height: 50px;
-        margin-bottom: 5px;
-      } 
-
-      .hero {
-        min-height: calc(100vh - 140px);
-        padding: 70px 10px;
-      }
-
-      .hero h1 {
-        font-size: 2rem;
-      }
-
-      .hero p {
-        font-size: 1rem;
-      }
-
-      footer {
-        font-size: 0.85rem;
+      nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
       }
     }
-
-    @media (max-width: 480px) {
-      .hero h1 {
-        font-size: 1.6rem;
-      }
-
-      .hero p {
-        font-size: 0.95rem;
-      }
-    }
-
-
-    /* Smooth Fade-in Animation */
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInSlide 0.8s ease forwards;
-}
-
-@keyframes fadeInSlide {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-
-.fade-in:nth-child(1) { animation-delay: 0.1s; }
-.fade-in:nth-child(2) { animation-delay: 0.2s; }
-.fade-in:nth-child(3) { animation-delay: 0.3s; }
-.fade-in:nth-child(4) { animation-delay: 0.4s; }
-.fade-in:nth-child(5) { animation-delay: 0.5s; }
-.fade-in:nth-child(6) { animation-delay: 0.6s; }
-.fade-in:nth-child(7) { animation-delay: 0.7s; }
-.fade-in:nth-child(8) { animation-delay: 0.8s; }
-
-    
-    
   </style>
 </head>
 <body>
+
   <header>
     <img src="logo.png" alt="A.M DIGITAL HEALTH HUB Logo" />
     <nav>
@@ -266,87 +251,88 @@ nav ul li a:hover {
     </nav>
   </header>
 
- <section class="services">
+  <section class="page-hero">
     <h1>Our Core Services</h1>
-  
-
-<div class="service-container">
-
-  <div class="service-box fade-in">
-    <h2>Digital Health Solutions</h2>
-    <p>
-    We design and implement innovative digital tools that improve how healthcare facilities collect, store, and manage patient data. Our solutions help clinics and organizations automate reporting, strengthen data-driven decision-making, improve workflow efficiency, and enhance service delivery across communities.  
-    </p>
-  </div>
-
-  <div class="service-box fade-in">
-    <h2>Health Information Management</h2>
-    <p>
-     We support healthcare institutions with efficient health records management, coding, classification, and data analysis. Our services ensure proper documentation, accurate reporting, and secure handling of patient information, enabling better planning and improved healthcare outcomes.
-    </p>
-  </div>
-
-  <div class="service-box fade-in">
-    <h2>ICT Infrastructure & Support</h2>
-    <p>
-     We set up and maintain reliable ICT systems—including networking, hardware installation, server setup, system troubleshooting, and IT maintenance—to ensure smooth digital operations for businesses, schools, and health facilities. Our team keeps your systems running 24/7 for maximum productivity.
-    </p>
-  </div>
-
-  <div class="service-box fade-in">
-    <h2>Software & Web Development</h2>
-    <p>
-      We build customized websites, web applications, mobile tools, and digital platforms designed to meet your organizational needs. Whether for health systems, business operations, education, or community engagement, our solutions deliver speed, security, and user-friendly experiences.
-    </p>
-  </div>
-
-  <div class="service-box fade-in">
-    <h2>E-Learning Setup & Digital Classroom Solutions</h2>
-    <p>
-      We develop complete e-learning systems, including Learning Management Systems (LMS), virtual classrooms, online assessments, digital course creation, and remote training environments. Our solutions help schools, institutions, and organizations deliver effective training from anywhere.
-    </p>
-  </div>
-
-  <div class="service-box fade-in">
-    <h2>Capacity Building & Training</h2>
-    <p>
-      We provide professional training programs in digital literacy, ICT skills, health data management, digital health systems, and modern workplace technologies. Our training empowers individuals, institutions, and communities to use technology confidently and effectively.
-    </p>
-  </div>
-
-  <div class="service-box fade-in">
-    <h2>Consultancy & Research</h2>
-    <p>
-     We offer expert consultancy in digital transformation, ICT planning, system implementation, and health system strengthening. We also conduct research and assessments to guide organizations in improving their digital health strategies, sustainability, and long-term impact.
-    </p>
-  </div>
-
-  <div class="service-box fade-in">
-    <h2>Community Health & Digital Outreach</h2>
-    <p>
-     We engage communities through digital health awareness programs, campaigns, and sensitization activities. Our outreach promotes health education, disease prevention, digital inclusion, and community empowerment using modern tools and interactive communication methods.
-    </p>
-  </div>
-
-</div>
-
-
- 
+    <p>Comprehensive Digital & Health Solutions</p>
   </section>
+
+  <section class="services-section">
+    <div class="service-container">
+
+      <div class="service-box">
+        <h2>🏥 Digital Health Solutions</h2>
+        <p>
+        We design and implement innovative digital tools that improve how healthcare facilities collect, store, and manage patient data. Our solutions help clinics and organizations automate reporting and strengthen data-driven decision-making.
+        </p>
+      </div>
+
+      <div class="service-box">
+        <h2>📂 Health Information Mgt.</h2>
+        <p>
+         We support healthcare institutions with efficient health records management, coding, classification, and data analysis. Our services ensure proper documentation and secure handling of patient information.
+        </p>
+      </div>
+
+      <div class="service-box">
+        <h2>🖥️ ICT Infrastructure</h2>
+        <p>
+         We set up and maintain reliable ICT systems—including networking, hardware installation, server setup, and system troubleshooting—to ensure smooth digital operations for businesses and health facilities.
+        </p>
+      </div>
+
+      <div class="service-box">
+        <h2>🌐 Web & Software Dev</h2>
+        <p>
+          We build customized websites, web applications, and mobile tools designed to meet your organizational needs. Our solutions deliver speed, security, and user-friendly experiences.
+        </p>
+      </div>
+
+      <div class="service-box">
+        <h2>🎓 E-Learning Setup</h2>
+        <p>
+          We develop complete e-learning systems, including Learning Management Systems (LMS) and virtual classrooms. Our solutions help schools and institutions deliver effective training from anywhere.
+        </p>
+      </div>
+
+      <div class="service-box">
+        <h2>💻 Capacity Building</h2>
+        <p>
+          We provide professional training programs in digital literacy, ICT skills, and health data management. Our training empowers individuals and institutions to use technology confidently.
+        </p>
+      </div>
+
+      <div class="service-box">
+        <h2>📊 Consultancy & Research</h2>
+        <p>
+         We offer expert consultancy in digital transformation and health system strengthening. We also conduct research to guide organizations in improving their digital health strategies.
+        </p>
+      </div>
+
+      <div class="service-box">
+        <h2>🌍 Community Outreach</h2>
+        <p>
+         We engage communities through digital health awareness programs and sensitization activities. Our outreach promotes health education and digital inclusion using modern tools.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <h2>Ready to Transform Your Organization?</h2>
+    <p>Let's discuss how we can tailor these solutions to your specific needs.</p>
+    <a href="contact.html" class="btn-contact">Contact Us Today</a>
+  </section>
+
+  <a href="https://wa.me/2348089454939" target="_blank" class="whatsapp-float">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Chat on WhatsApp">
+  </a>
 
   <footer>
     <p>&copy; 2025 A.M DIGITAL HEALTH HUB | All Rights Reserved</p>
+    <p>Located in Azare, Bauchi State</p>
     <p>Developed by <a href="#">Alhassan Mujtaba</a></p>
   </footer>
 
-  <script>
-    // Optional JS - add future interactivity here
-    console.log("Services page loaded successfully.");
-  </script>
 </body>
 </html>
-
-
-
-
-
